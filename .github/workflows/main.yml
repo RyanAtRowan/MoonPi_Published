@@ -21,7 +21,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        app_port: 22
+        port: 8000
         script: |
           cd /var/www/app/MoonPi_Published/
           git pull origin main
