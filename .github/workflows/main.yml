@@ -22,10 +22,10 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
+        port: 8000
         script: |
           cd /var/www/app/MoonPi_Published/
           git pull origin main
           git status
-          systemctl daemon-reload
+          npm install --only=prod
 
