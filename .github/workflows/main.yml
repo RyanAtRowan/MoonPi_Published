@@ -27,4 +27,4 @@ jobs:
           cd /var/www/app/MoonPi_Published/
           git pull origin main
           git status
-          npm install --only=prod
+
