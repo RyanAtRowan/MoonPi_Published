@@ -24,7 +24,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         # key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
-        command-timeout: 30m
+        command_timeout: 30m
         script: |
           cd /var/www/app/MoonPi_Published/
           git pull origin main
