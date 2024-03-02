@@ -12,6 +12,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:       
@@ -23,6 +24,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         # key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
+        command-timeout: 30m
         script: |
           cd /var/www/app/MoonPi_Published/
           git pull origin main
