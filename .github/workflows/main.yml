@@ -19,9 +19,9 @@ jobs:
 
     - name: Deploy updates to Raspberry Pi
       run: |
-        ssh -p 2222 -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << EOF
+        ssh -p 2222 -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }}
         cd /var/www/app/MoonPi_Published
         git pull 
         systemctl stop kestrel-app.service 
         systemctl start kestrel-app.service'
-        EOF
+
