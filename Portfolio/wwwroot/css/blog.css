@@ -5,7 +5,7 @@
     background-image: url(../Assets/Blog/footer.png);
 }
 
-.water {
+#multibg {
     background-image: url(../Assets/Blog/water.png), linear-gradient(#20427F, white);
     background-repeat: repeat-x, no-repeat;
     background-position: left bottom, left;
