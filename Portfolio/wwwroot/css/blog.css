@@ -1,16 +1,9 @@
 ﻿body {
+    background-image: url(../Assets/Blog/water.png), linear-gradient(#20427F, white);
+    background-repeat: repeat-x, no-repeat;
+    background-position: left bottom, left;
 }
 
 #lith {
     background-image: url(../Assets/Blog/footer.png);
-}
-
-#multibg {
-    background: #20427F;
-    background-image: url(../Assets/Blog/water.png), linear-gradient(#20427F, white);
-    background-image: url(../Assets/Blog/water.png), -moz-linear-gradient(#20427F, white);
-    background-image: url(../Assets/Blog/water.png), -webkit-linear-gradient(#20427F, white);
-    background-image: url(../Assets/Blog/water.png), -ms-linear-gradient(#20427F, white);
-    background-repeat: repeat-x, no-repeat;
-    background-position: left bottom, left;
 }
